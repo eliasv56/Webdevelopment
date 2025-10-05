@@ -5,30 +5,33 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Oefening 6.1</h1>
-<p>(4x2 + 2(
-    <br/>
-    Probleem: er wordt een haak geopend, maar niet gesloten.
-</p>
-<h1>Oefening 6.2</h1>
-<p>
-    (4x2( +2
-    <br/>
-    Probleem: er wordt een tweede haak geopend zonder dat de eerste werd afgesloten.
-</p>
-<h1>Oefening 6.3</h1>
-<p>
-    (4x(2+2)
-    <br/>
-    Hier opent men eerst een haak (, daarna nog een (, maar sluit dan maar één haak.
-    Dus: één haak blijft open → niet correct genest.
-</p>
-<h1>Oefening 6.4</h1>
-<p>
-    (4x(2+2()
-    <br/>
-    Probleem: er wordt een extra haak geopend achteraan, maar er is geen sluitende haak voor die laatste.
-</p>
+<h1>Opdracht 6 - Waarom niet correct genest?</h1>
+
+<p>In de wiskunde moet elk geopend haakje ook weer gesloten worden. In HTML geldt hetzelfde voor tags: elke <em>begintag</em> moet een bijpassende <em>eindtag</em> hebben, in de juiste volgorde.</p>
+
+<h2>Voorbeelden met haakjes</h2>
+<ul>
+    <li><code class="fout">(4x2 + 2(</code> → twee haakjes open, geen gesloten.</li>
+    <li><code class="fout">(4x2( +2</code> → twee haakjes open, geen gesloten.</li>
+    <li><code class="fout">(4x(2+2)</code> → twee haakjes open, slechts één gesloten.</li>
+    <li><code class="fout">(4x(2+2()</code> → drie haakjes open, slechts één gesloten.</li>
+</ul>
+
+<h2>Vergelijking met HTML</h2>
+<p>Hetzelfde principe in HTML:</p>
+<ul>
+    <li><code class="fout">&lt;p&gt;4x2 + 2&lt;p&gt;</code> → tweede <code>&lt;p&gt;</code> niet gesloten.</li>
+    <li><code class="fout">&lt;div&gt;&lt;em&gt; +2</code> → beide opentags niet gesloten.</li>
+    <li><code class="fout">&lt;p&gt;&lt;strong&gt;2+2&lt;/strong&gt;</code> → <code>&lt;p&gt;</code> niet afgesloten.</li>
+    <li><code class="fout">&lt;div&gt;&lt;em&gt;2+2&lt;p&gt;</code> → drie opentags, maar slechts één sluitend tag.</li>
+</ul>
+
+<h2>Correct genest</h2>
+<p>Een correct voorbeeld met haakjes:</p>
+<code class="goed">(4x(2+2))</code>
+<p>Een correct voorbeeld in HTML:</p>
+<code class="goed">&lt;p&gt;&lt;strong&gt;2+2&lt;/strong&gt;&lt;/p&gt;</code>
+
 
 
 </body>
