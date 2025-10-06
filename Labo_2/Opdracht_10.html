@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Fout in html bestand</h1>
+<ul>
+    <li>een</li>
+    <li>twee</li>
+    <ol>
+        <li>jan</li>
+        <li>piet</li>
+        <li>joris</li>
+    </ol>
+    <li>vier</li>
+</ul>
+<p>Een ol staat hier los tussen li elementen in.</p>
+<p>Volgens de HTML-specificatie mag een lijst (ol of ul>) alleen binnenin een li> genest worden, niet rechtstreeks naast andere li>-tags.</p>
+<h1>hoe het wel moet</h1>
+<ul>
+    <li>een</li>
+    <li>
+        twee
+        <ol>
+            <li>jan</li>
+            <li>piet</li>
+            <li>joris</li>
+        </ol>
+    </li>
+    <li>vier</li>
+</ul>
+</body>
+</html>
