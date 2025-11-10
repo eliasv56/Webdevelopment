@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana ;
+    font-size: 1.1em;
+    background-color: Silver;
+    color: DarkBlue;
+}
+
+h1 {
+    font-variant: small-caps;
+    background-color: red;
+}
+
+a:hover{
+    border: 4px Pink;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.stippelrand{
+    border: 1px dotted darkblue;
+    padding: 8px;
+    margin: 10px 0;
+}

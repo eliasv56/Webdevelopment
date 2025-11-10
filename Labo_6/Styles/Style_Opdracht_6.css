@@ -1,0 +1,8 @@
+ul.checklist li::before {
+    content: "☐ "; /* leeg vakje */
+}
+
+ul.checklist li.checked::before {
+    content: "✅";
+
+}
