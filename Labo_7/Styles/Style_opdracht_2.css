@@ -1,0 +1,35 @@
+
+.vriendentabel {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.vriendentabel thead th {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid blue;
+}
+
+
+.vriendentabel td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.vriendentabel tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+
+.vriendentabel tbody tr:hover {
+    background-color: navajowhite;
+}
+
+.onbekend {
+    background-color: red;
+}
