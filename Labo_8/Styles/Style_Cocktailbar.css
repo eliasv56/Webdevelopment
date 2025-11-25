@@ -1,0 +1,66 @@
+
+/* Algemene instellingen */
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #444444;
+    background-color: #a7cece;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.canvas {
+    width: 95%;
+    margin: 30px;
+    padding: 20px;
+    border: 2px dotted white;
+    background-color: #a7cece;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout */
+.main-section {
+    display: flex;
+    gap: 20px;
+}
+
+.left-content {
+    width: 70%;
+}
+
+.right-content {
+    width: 30%;
+}
+
+/* Koppen */
+h1, h2 {
+    color: rgb(0, 126, 126);
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+/* Weekly Specials */
+.weekly-specials {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+

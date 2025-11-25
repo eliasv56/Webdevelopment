@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.column p {
+    margin: 0;
+}
