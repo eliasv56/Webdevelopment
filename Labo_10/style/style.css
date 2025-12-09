@@ -1,0 +1,16 @@
+
+.row  div {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+
+.row > div:nth-child(odd) {
+    background-color: white;
+}
+
+.row > div:nth-child(even) {
+    background-color: lightgrey;
+}

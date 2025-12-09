@@ -1,0 +1,54 @@
+/* Basis */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Zorg dat de inhoud niet tegen de randen kleeft */
+main.container {
+    margin-bottom: 20px;
+}
+
+/* Header */
+
+header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Secties */
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Lijsten in persoonlijke info */
+
+#info ul {
+    padding-left: 0;
+}
+
+#info li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* Afbeelding bij info een vaste max-breedte geven */
+
+#info img {
+    max-width: 200px;
+}
+
+/* Tabel */
+
+#prognose .table {
+    background-color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+    font-size: 12px;
+}

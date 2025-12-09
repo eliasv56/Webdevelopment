@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Piet Mondriaan met Bootstrap</title>
+
+    <!-- Bootstrap 5 grid -->
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
+    <!-- jouw CSS met #a t/m #g -->
+    <link rel="stylesheet" href="style/Style_piet_monderiaan.css">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+
+<div class="container p-0">
+    <div class="row g-0">
+
+        <!-- LINKER KOLOM (A, B, D) -->
+        <div class="col-3 d-flex flex-column">
+
+            <!-- A (boven links wit) -->
+            <div id="a"></div>
+
+            <!-- zwarte horizontale lijn + B -->
+            <div class="row g-0">
+                <!-- zwarte balk links van C zit in C zelf via border -->
+                <div class="col-12">
+                    <div id="b"></div>
+                </div>
+            </div>
+
+            <!-- D (blauw onderaan links) -->
+            <div id="d"></div>
+        </div>
+
+        <!-- RECHTER GROOT BLOK (C + E + F + G) -->
+        <div class="col-9 d-flex flex-column">
+
+            <!-- C (groot rood vlak, met zwarte lijnen boven/links/onder via border) -->
+            <div id="c"></div>
+
+            <!-- Rij onder C met E en kolom F/G rechts -->
+            <div class="row g-0">
+
+                <!-- E (wit onder C) -->
+                <div class="col-10">
+                    <div id="e"></div>
+                </div>
+
+                <!-- Kolom rechts met F (wit) en G (geel) onder elkaar -->
+                <div class="col-2 d-flex flex-column">
+                    <div id="f"></div>
+                    <div id="g"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
