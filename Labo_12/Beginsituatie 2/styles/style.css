@@ -1,0 +1,126 @@
+canvas {
+    background-color: #333;
+}
+
+/* Typography */
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1em;
+    margin: 5px;
+}
+
+/* Global padding */
+* {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Exceptions op padding */
+nav {
+    padding: 5px 2px;
+}
+
+img {
+    padding: 0;
+}
+
+/* Kleuren header / footer / links */
+header,
+footer {
+    background: #ddaa00;
+}
+
+a {
+    color: #ddaa00;
+}
+
+/* Layout backgrounds */
+nav {
+    background-color: #ccc;
+}
+
+main {
+    background-color: grey;
+}
+
+/* Marges */
+section {
+    margin: 5px;
+}
+
+nav a {
+    margin: 0 5px;
+}
+
+/* Headings */
+h1 {
+    margin: 0;
+}
+
+/* Borders */
+nav a {
+    border: 1px solid #ccc;
+}
+
+section a {
+    border: 1px solid #333;
+}
+
+@media screen and (max-width: 700px){
+    body {
+        background-color: #333;
+        padding: 0;
+    }
+
+    main {
+        display: block;          /* GEEN flex */
+    }
+
+    main > div {
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    main > div img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 701px) {
+
+    body {
+        background-color: #333;
+        padding: 20px;
+    }
+
+    /* grijze “canvas” in het midden */
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;                    /* 3 kolommen */
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    main > div {
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > div img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* knop onderaan de kaart */
+    main > div a {
+        margin-top: auto;
+    }
+}
