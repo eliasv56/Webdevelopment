@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Styles/Style.css">
+</head>
+<body>
+
+<h2>Opdracht: producten</h2>
+
+<table>
+    <tr>
+        <th>product</th>
+        <th>prijs</th>
+        <th>aantal</th>
+        <th>btw</th>
+        <th>subtotaal</th>
+    </tr>
+
+    <tr>
+        <td>product1</td>
+        <td class="prijs">10.00 Eur</td>
+        <td><input class="aantal" type="number" value="0" min="0"></td>
+        <td class="btw">6%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+
+    <tr>
+        <td>product2</td>
+        <td class="prijs">15.00 Eur</td>
+        <td><input class="aantal" type="number" value="0" min="0"></td>
+        <td class="btw">21%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+
+    <tr>
+        <td>product3</td>
+        <td class="prijs">12.20 Eur</td>
+        <td><input class="aantal" type="number" value="0" min="0"></td>
+        <td class="btw">21%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+
+    <tr>
+        <td colspan="4"><strong>totaal</strong></td>
+        <td id="totaal">0.00 Eur</td>
+    </tr>
+</table>
+
+<br>
+<button id="herbereken">Herbereken</button>
+
+<script src="Script/JavaScript.js"></script>
+</body>
+</html>
