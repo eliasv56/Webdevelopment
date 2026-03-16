@@ -1,0 +1,63 @@
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hoofd- en subkoppen */
+h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Lijsten opmaken */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    background-color: #ecf0f1;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Genummerde sublijsten */
+ol {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+ol li {
+    margin-bottom: 5px;
+}
+
+/* Links stylen */
+a {
+    text-decoration: none;
+    color: #2980b9;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Kleine visuele details */
+ul li h2, ul li h3, ul li h4 {
+    margin-top: 0;
+}
