@@ -1,5 +1,5 @@
 const setup = () => {
-    let sliders = document.getElementsByClassName("slider");
+    let sliders = document.getElementById("slider");
 
     for (let i = 0; i < sliders.length; i++) {
         sliders[i].addEventListener("input", update);

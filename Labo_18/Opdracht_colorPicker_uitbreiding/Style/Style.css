@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cfcfcf;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Grote container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+    padding: 40px;
+
+    border: 1px solid #999;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+}
+
+/* Sliders links */
+.sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Elke rij */
+.sliders > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Slider zelf */
+input[type="range"] {
+    width: 200px;
+}
+
+/* Tekst (Red 128 etc) */
+.sliders span {
+    width: 120px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Color box */
+#color-box {
+    width: 180px;
+    height: 180px;
+    border-radius: 25px;
+    border: 3px solid #999;
+}
+
+/* Save knop */
+#swatch-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#save-button {
+    padding: 8px 16px;
+    font-size: 16px;
+
+    border: 2px solid #999;
+    border-radius: 6px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#save-button:hover {
+    background-color: #ddd;
+}

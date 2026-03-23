@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+<body>
+
+<main class="app">
+
+    <section class="picker">
+        <div class="sliders">
+
+            <div class="slider-row">
+                <input type="range" id="red-slider" min="0" max="255" value="128">
+                <span>Red: <strong id="red-value">128</strong></span>
+            </div>
+
+            <div class="slider-row">
+                <input type="range" id="green-slider" min="0" max="255" value="128">
+                <span>Green: <strong id="green-value">128</strong></span>
+            </div>
+
+            <div class="slider-row">
+                <input type="range" id="blue-slider" min="0" max="255" value="128">
+                <span>Blue: <strong id="blue-value">128</strong></span>
+            </div>
+
+        </div>
+
+        <div id="color-box"></div>
+    </section>
+
+    <section class="swatches">
+        <button id="save-button">Save Color</button>
+        <div id="swatch-box"></div>
+    </section>
+
+</main>
+
+<script src="JavaScript/Script.js"></script>
+</body>
+</html>
