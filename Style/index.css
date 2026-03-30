@@ -1,63 +1,78 @@
-/* Algemene opmaak */
+/* Basis styling voor pagina */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f9f9f9;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Hoofd- en subkoppen */
+/* Hoofd Titel */
 h1 {
-    color: #2c3e50;
-    font-size: 2.2em;
-    margin-bottom: 20px;
     text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #1a1a1a;
 }
 
+/* Subtitels voor Labo secties */
 h2, h3, h4 {
-    color: #34495e;
-    margin-top: 20px;
+    color: #222;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
-/* Lijsten opmaken */
+/* Hoofd lijsten */
 ul {
-    list-style: none;
+    list-style: none; /* verwijder standaard bullets */
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 15px 20px;
 }
 
+/* Lijst items */
 ul li {
-    background-color: #ecf0f1;
-    padding: 10px 15px;
     margin-bottom: 10px;
-    border-radius: 5px;
 }
 
-/* Genummerde sublijsten */
+/* Genummerde lijsten binnen een ul */
 ol {
     padding-left: 20px;
     margin-top: 5px;
 }
 
-ol li {
-    margin-bottom: 5px;
-}
-
-/* Links stylen */
+/* Links styling */
 a {
+    color: #007acc;
     text-decoration: none;
-    color: #2980b9;
-    transition: color 0.3s;
+    transition: all 0.2s ease;
 }
 
 a:hover {
-    color: #e74c3c;
     text-decoration: underline;
+    color: #005f99;
 }
 
-/* Kleine visuele details */
+/* Titels van de Labo items binnen li */
 ul li h2, ul li h3, ul li h4 {
-    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Kleine padding voor nested ol */
+ul li ol li {
+    margin-bottom: 5px;
+}
+
+/* Responsief: kleinere schermen */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
 }

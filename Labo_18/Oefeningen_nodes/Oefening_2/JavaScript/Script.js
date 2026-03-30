@@ -5,7 +5,7 @@ const setup = () =>{
     });
     const body = document.querySelector("body");
     const img = document.createElement("img");
-    img.setAttribute("src", "Images/eend.jpg" );
+    img.setAttribute("src", "Images/eend.jpg"  );
     body.appendChild(img);
 
 }

@@ -1,5 +1,6 @@
 const setup = () => {
-    document.querySelector("button").addEventListener("click",onderDiv);
+    let knop = document.querySelector("button");
+    knop.addEventListener("click", onderDiv);
 }
 
 const onderDiv = () =>{
@@ -8,4 +9,4 @@ const onderDiv = () =>{
     document.querySelector("#myDIV").appendChild(p);
 }
 
-window.addEventListener("click", setup);
+window.addEventListener("load", setup);
